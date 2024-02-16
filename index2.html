@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Cuenta Regresiva con WebSocket y HTMX</title>
+    <!-- Incluir HTMX desde CDN -->
+    <script src="https://unpkg.com/htmx.org"></script>
+</head>
+<body>
+
+  <div id="cuenta-regresiva">
+        <!-- La cuenta regresiva se mostrará aquí -->
+    </div>
+
+
+    <script>
+        var ws = new WebSocket('wss://lab.ivacker.dev/ws');
+
+        ws.onmessage = function(event) {
+            var data = JSON.parse(event.data);
+            // Actualizar el div con la nueva cuenta regresiva
+            var cuentaRegresiva = 'Días: ' + data.days + ', Horas: ' + data.hours + ', Minutos: ' + data.minutes + ', Segundos: ' + data.seconds;
+            document.getElementById('cuenta-regresiva').textContent = cuentaRegresiva;
+        };
+
+        ws.onerror = function(error) {
+            console.log('WebSocket Error: ' + error);
+        };
+
+        ws.onclose = function() {
+            console.log('WebSocket connection closed');
+        };
+    </script>
+</body>
+</html>

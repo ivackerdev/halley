@@ -1,0 +1,203 @@
+@charset "utf-8";
+body {
+	margin:0 auto; 
+	max-width:1070px; 
+	background:#000F29;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:1em; line-height:150%;
+	text-align:justify;
+	}
+.ftn{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:0.8em;
+	line-height:140%;
+	text-align:justify;}
+	a:link{text-decoration:none}
+	a:visited{text-decoration:none}
+.figde{
+	text-align:center;
+	font-style:italic;
+	margin:10px 0px 10px 10px;
+	float:right;}
+.figiz{
+	text-align:center;
+	font-style:italic;
+	margin:10px 10px 10px 0px;
+	float:left;}
+.fiz {
+	float:left;
+	width:40%;
+	margin-right:10px;
+	text-align:center;}
+.fde {
+	float:right; 
+	width:40%; margin-left:10px; 
+	text-align:center;}
+.page {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;  
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    text-align: center;
+}
+ 
+.page > * {
+    padding: 10px;
+    flex: 1 100%;
+}
+.header {
+	display: flex;
+	flex-direction:row;
+	justify-content: space-between;
+	
+	/*float:left;*/
+	text-align:left;
+	background:#000F29;    
+}
+.footer {
+	background:#000F29;
+	text-align:center; 
+	font-family:verdana; 
+	font-size:0.75em; 
+	color:#ffff4c;
+	margin:1px;
+	} 
+.content {
+  text-align: justify;
+  font-size:1em;
+  background:#FFFFFF;
+  border-color:#000F29;
+  border: 1px solid;
+  border-radius:7px;
+  margin: 4px;
+  padding: 5px 10px 5px 10px;
+  overflow-wrap: break-word;
+  
+
+  
+}
+.sangria {
+	margin:auto; text-indent: 1.5em;
+	}
+.marco { margin:auto; 
+   padding:8px; 
+   background-color: #ffffc4; 
+   max-width: 300px;
+   max-height:400px; 
+   border: 3px solid #000000;
+   border-radius:10px; 
+} 
+.sidebar_left {
+	font-size:0.70em;
+	line-height:1.4em;
+	text-align:left;
+	background: #ffffc4;
+	max-width:164px;
+	border-color:#000F29;
+	border: 1px solid;
+	border-radius:7px;
+	margin-top:4px;
+	margin-bottom:4px
+} 
+.sidebar_left ol {margin-left:-20px;}
+.sidebar_right {
+  background:#569938;;
+  max-width:164px;
+  border-color:#000F29;
+  border: 1px solid;
+  border-radius:7px;
+  margin:4px 0px 4px 4px;
+} 
+@media all and (min-width: 600px) {
+  .aside { flex: 1 auto; }
+} 
+@media all and (min-width: 800px) {
+  .content    { flex: 3 0px; }
+  .sidebar_left { order: 1; } 
+  .content    { order: 2; }
+  .sidebar_right { order: 3; }
+  .footer  { order: 4; }
+}
+
+.babla{ 
+background-color:#FFFFFF; color:#000000; border:solid 2px; border-radius:10px; padding:8px; width:85%; text-align:justify; margin:0 auto;
+ }
+.bazul{
+background-color:#000066; color:#ffffff; border:solid 0px; border-radius:10px; padding:8px; width:85%; text-align:justify; margin:0 auto;
+}
+.citasic{ width:90%; text-align:justify; font-style:italic; margin:auto;}
+.mono{ text-align:center; font-style:italic; margin:auto; max-width: 100%; height: auto;}
+/* Empieza boton menu*/
+    .dropdown {
+    position: relative;
+    display: inline-block;    
+    }
+    .dropdown .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    display: none;
+    margin: 0;
+    font-family:arial;
+    /****************
+     ** NEW STYLES **
+     ****************/
+    list-style: none; /** Remove list bullets */
+    width: 100%; /** Set the width to 100% of it's parent */
+    padding: 0;
+    }
+    .dropdown:hover .dropdown-menu {
+    display: block;
+    }
+    /** Button Styles **/
+    .dropdown button {
+    background: #000000;
+    color: #ffff4c;
+    border: none;
+    margin: 0;
+    padding: 0.2em 0.2em;
+    }
+    /** List Item Styles **/
+    .dropdown a {
+    display: block;
+    padding: 0.2em 0.4em 0.6em 0.4em;
+    text-decoration: none;
+    background:#000000;
+    color: #ffff4c;
+    font-size:0.70em;
+    line-height:1.3em;
+    }
+    /** List Item Hover Styles **/
+    .dropdown a:hover {
+    background: #FFFF77;
+    color:#000000;
+    }
+	.blockblue { margin:auto; 
+   padding:15px; 
+   background-color: #000066;
+   color:#ffffff;
+   max-width: 90%; 
+   border: 3px solid #000066;;
+   border-radius:10px;
+   font-style:italic;
+   text-align:justify;
+}
+    /*Termina boton menu*/
+	/*Linea Roja*/ 
+	.roja { 
+  border-width: 1px;
+  margin-left:0;
+  width:10%;
+  border-color:#F00;
+} 
+/*Fin Linea Roja*/
+
+/*Tabla tipo zebra*/
+.zebra 
+  tr:nth-child(even)
+  {
+  background-color: #f2f2f2;
+}
+/*Fin Tabla tipo zebra*/

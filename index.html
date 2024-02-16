@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTNL76WR87"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-RTNL76WR87');
+</script>
+
+<script>
+    let navegador = navigator.userAgent;
+    if (window.innerWidth <= 600) {
+        console.log("Es un móvil");
+        window.location.assign('2061.html');
+    }
+</script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cometa Halley >></title>
+</head>
+<body>
+    <section class="showcase">
+        <header>
+            <h2 class="logo">Cometa Halley</h2>
+            <div class="toggle"></div>
+        </header>
+
+        <!-- <video src="AQUI VA EL VIDEO" muted loop autoplay></video> -->
+
+        <video src="halley.mp4" muted loop autoplay></video>
+
+        <div class="overlay"></div>
+
+        <div class="text">            
+            <h2>
+                <div id="timeDifference">
+                    <script src="wso.js"></script>
+                </div>
+            </h2>
+
+            <p><strong>Ikigai (生き甲斐)</strong>,  se refiere a <strong>"la razón de ser”</strong>, lo que nos motiva a levantarnos cada mañana y emprender nuevos desafíos. </p>            
+            
+            <a href="2061.html">Ver reloj</a>            
+            
+            
+        </div>
+
+        <ul class="social">            
+            <li><a href="#"><img src="icons8-instagram-24.png" alt="Instagram"></a></li>
+            <li><a href="#"><img src="icons8-twitter-24.png" alt="Twitter"></a></li>
+            <li><a href="#"><img src="icons8-youtube-24.png" alt="Youtube"></a></li>
+        </ul>
+    </section>
+
+    <div class="menu">                
+        <ul> 
+                   
+            <li><a href=""><strong>Avistamientos</strong></a></li>
+            <li><a href="1531.html">1531</a></li>     
+            <li><a href="1607.html">1607</a></li>     
+            <li><a href="1682.html">1682</a></li>            
+            <li><a href="1758.html">1758</a></li>
+            <li><a href="1835.html">1835</a></li>
+            <li><a href="1910.html">1910</a></li>
+            <li><a href="1986.html">1986</a></li>
+	        <li><a href="2061.html"><strong>2061</strong></a></li>
+            <li><a href="2134.html">2134</a></li>
+
+        </ul>
+        
+    </div>
+
+    <script>
+        const menuToggle = document.querySelector('.toggle')
+        const showcase = document.querySelector('.showcase')
+
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active')
+            showcase.classList.toggle('active')
+        })
+
+    </script>
+
+</body>
+</html>
